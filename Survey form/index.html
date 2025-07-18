@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxury Dining Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="form-container">
+    <h1 id="title">Luxury Dining Experience Survey</h1>
+    <p id="description">Please help us improve our world-class service by answering the questions below.</p>
+
+    <form id="survey-form">
+
+      <label for="name" id="name-label">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g Purity Gift" required />
+
+      <label for="email" id="email-label">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="e.g puritygift@gmail.com"  pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,}$" required />
+
+      <label for="number" id="number-label">How many times have you visited us?</label>
+      <input type="number" id="number" name="visits" min="18" max="100" placeholder="e.g 21" required />
+
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" name="source" required>
+        <option value=""> kindly select </option>
+        <option value="social">Social Media</option>
+        <option value="friend">Through friends</option>
+        <option value="ads">Luxury Magazine</option>
+      </select>
+
+      <div class="radio-group">
+        <label>How would you rate your overall experience?</label>
+        <label>
+          <input type="radio" name="rating" value="excellent" checked required /> Excellent
+        </label>
+        <label>
+          <input type="radio" name="rating" value="good" /> Good
+        </label>
+        <label>
+          <input type="radio" name="rating" value="average" /> Average
+        </label>
+        <label>
+          <input type="radio" name="rating" value="poor" /> Poor
+        </label>
+      </div>
+
+      <div class="checkbox-group">
+        <label>What did you enjoy? (Select all that apply)</label>
+        <label><input type="checkbox" name="dishes" value="steak" /> Steak</label>
+        <label><input type="checkbox" name="dishes" value="dessert" /> Dessert</label>
+        <label><input type="checkbox" name="dishes" value="wine" /> Wine</label>
+        <label><input type="checkbox" name="dishes" value="ambience" /> Ambience</label>
+      </div>
+
+      <label for="comments">Additional Comments</label>
+      <textarea id="comments" name="comments" placeholder="Let us know anything else..."></textarea>
+
+      <input type="submit" id="submit" value="Submit Feedback" />
+    </form>
+  </div>
+
+</body>
+</html>
